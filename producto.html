@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDACIÓN DE FORMULARIO</title>
+    <!-- Links Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="./assets/img/formulario.png" type="image/x-icon">
+    <!-- Links Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="row m-0 justify-content-center align-items-center">
+        <h1 class="title-product col-md-8">REGISTRO DE PRODUCTO</h1>
+        <form class="registrar row g-3 needs-validation col-md-8" novalidate>
+            <label for="validationCustom01" class="form-label col-md-2">Código:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar código.
+                </div>
+            </div>
+
+            <label for="validationCustom02" class="form-label col-md-2">Descripción:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar descripción.
+                </div>
+            </div>
+
+            <label for="validationCustom03" class="form-label col-md-2">Código de barra:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar código de barra.
+                </div>
+            </div>
+
+            <label for="validationCustom04" class="form-label col-md-2">Precio unitario:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom04" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar precio unitario.
+                </div>
+            </div>
+        
+            <label for="validationCustom05" class="form-label col-md-2">Stock:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar stock.
+                </div>
+            </div>
+
+            <label for="validationCustom06" class="form-label col-md-2">Proveedor:</label>
+            <div class="col-md-10">
+                <input type="text" class="form-control" id="validationCustom06" required>
+                <div class="valid-feedback">
+                    Completado.
+                </div>
+                <div class="invalid-feedback">
+                    Ingresar proveedor.
+                </div>
+            </div>
+            <label class="form-label col-md-2">Estado:</label>
+            <div class="col-md-10">
+                <div class="form-check col-md-3">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Activo
+                    </label>
+                    <div class="invalid-feedback">
+                        El estado esta inactivo
+                    </div>
+                </div>
+            </div>
+
+            <label for="validationCustom04" class="form-label col-md-2">Categoría</label>
+            <div class="col-md-3">
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option>Categoría 1</option>
+                    <option>Categoría 2</option>
+                    <option>Categoría 3</option>
+                    <option>Categoría 4</option>
+                </select>
+                <div class="invalid-feedback">
+                    Seleccionar una categoría.
+                </div>
+            </div>
+            <div class="conten-btn row col-xs-12 col-md-12">
+                <div class="div-btn col-xs-6 col-md-9">
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+                
+                <div class="div-btn col-xs-6 col-md-3">
+                    <button class="btn btn-primary" type="button" onclick="cancelar()">Cancelar</button>
+                </div>
+            </div>
+            
+        </form>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
